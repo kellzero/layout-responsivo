@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Playwrite IS", cursive;
+    list-style: none;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+header{
+    background-color: rgb(214, 165, 74);
+    padding-top: 16px;
+    color: rgb(35, 6, 201);
+}
+
+#sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.9em;
+    margin: 0 auto;
+    
+}
+
+
+
+#sobre img{
+    width: 480px;
+    height: auto;
+}
+
+
+
+section{
+    padding: 42px 0;
+    
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+
+ul li img {
+    width: 100%;
+    height: auto; 
+}
+
+.lista-opcoes{
+    display: flex;
+    grid-template-columns: repeat(3, 24.95%);
+    column-gap: 1%;
+}
+
+
+
+button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(175, 127, 56);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+
+@media screen  and (max-width: 640px) {
+    #sobre{
+        display: block;
+        }
+
+    .container{
+        max-width: 95%;
+    }
+    
+    #sobre .container  {
+        display: block;
+        font-size: 1em;
+    }
+    
+    #sobre .container img{
+        margin-right: 0;
+    }
+
+    .lista-opcoes{
+        display: block;
+        
+    }
+    #sobre img{
+        width: 350px;
+        height: auto;
+    }
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 100%;
+        padding: 0 8px;
+    }
+
+    .lista-opcoes {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 4%;
+    }
+
+    #sobre .container {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    #sobre img {
+        width: 100%; 
+        max-width: 700px; 
+    }
+}
